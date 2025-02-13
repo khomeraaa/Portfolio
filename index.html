@@ -356,12 +356,16 @@
 
          -->
          <form name="contact" method="POST" data-netlify="true" class="contact-form">
+          <!-- Add this hidden input -->
+          <input type="hidden" name="form-name" value="contact" />
+          
           <div class="contact-inputs">
-              <input type="text" name="name" placeholder="Name" class="contact-input" required />
-              <input type="email" name="email" placeholder="Email" class="contact-input" required />
+            <input type="text" name="name" placeholder="Name" class="contact-input" required />
+            <input type="email" name="email" placeholder="Email" class="contact-input" required />
           </div>
           <textarea name="message" placeholder="Your message" class="contact-input" rows="10" required></textarea>
           <input type="submit" value="Send" class="contact-button" />
+        </form>
 
       </form>      
         </div>
